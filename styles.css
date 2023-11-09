@@ -1,0 +1,103 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+form {
+    margin: 2rem;
+}
+
+.payment-details {
+    /* border: 1px solid red; */
+    font-size: smaller;
+    width: 22rem;
+}
+
+.card-information-box {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-with-icon {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+}
+
+.card-info-front {
+    margin-bottom: 5px;
+}
+
+.card-info-back {
+    display: flex;
+    gap: 10px;
+}
+
+.card-info-mmyy {
+    border: 1px solid lightgrey;
+    border-radius: 3px;
+    padding-right: 3px;
+}
+
+.card-info-cvc {
+    border: 1px solid lightgrey;
+    border-radius: 3px;
+    padding-right: 3px;
+}
+
+.input-card-info-front {
+    margin-top: 5px;
+    border: 1px solid lightgrey;
+    border-radius: 3px;
+    width: 18.9rem;
+    padding-right: 30px;
+}
+
+
+.card-icon {
+    background-color: dimgray;
+    border-radius: 1px;
+    position: relative;
+    margin-top: 0.3rem;
+    margin-left: -1rem;
+    padding: 2px 3px;
+    right: 5px
+}
+
+#checkbox-email {
+    border: 1px solid lightgrey;
+    border-radius: 3px;
+    margin-top: 5px;
+    width: 20.7rem;
+}
+
+#number-on-card {
+    border: 1px solid lightgrey;
+    border-radius: 3px;
+    margin-top: 5px;
+    width: 20.7rem;
+}
+
+#country-or-region {
+    width: 21.2rem;
+}
+
+#country-or-region {
+    cursor: pointer;
+    background-color: transparent;
+    border: 1px solid lightgrey;
+    border-radius: 3px;
+    margin-top: 5px;
+    padding: 4px;
+    color: grey;
+}
+
+#payment-button {
+    cursor: pointer;
+    background-color: black;
+    border: black;
+    border-radius: 5px;
+    color: #fff;
+    width: 21.2rem;
+    padding: 0.5rem;
+}
