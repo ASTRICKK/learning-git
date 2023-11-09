@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        form {
+            margin: 2rem;
+        }
+
+        .payment-details {
+            /* border: 1px solid red; */
+            font-size: smaller;
+            width: 22rem;
+        }
+
+        .card-information-box {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .input-with-icon {
+            position: relative;
+            display: inline-flex;
+            align-items: center;
+        }
+
+        .card-info-front {
+            margin-bottom: 5px;
+        }
+
+        .card-info-back {
+            display: flex;
+            gap: 10px;
+        }
+
+        .card-info-mmyy {
+            border: 1px solid lightgrey;
+            border-radius: 3px;
+            padding-right: 3px;
+        }
+
+        .card-info-cvc {
+            border: 1px solid lightgrey;
+            border-radius: 3px;
+            padding-right: 3px;
+        }
+
+        .input-card-info-front {
+            margin-top: 5px;
+            border: 1px solid lightgrey;
+            border-radius: 3px;
+            width: 18.9rem;
+            padding-right: 30px;
+        }
+
+        
+        .card-icon {
+            background-color: dimgray;
+            border-radius: 1px;
+            position: relative;
+            margin-top: 0.3rem;
+            margin-left: -1rem;
+            padding: 2px 3px;
+            right: 5px
+        }
+
+        #checkbox-email {
+            border: 1px solid lightgrey;
+            border-radius: 3px;
+            margin-top: 5px;
+            width: 20.7rem;
+        }
+
+        #number-on-card {
+            border: 1px solid lightgrey;
+            border-radius: 3px;
+            margin-top: 5px;
+            width: 20.7rem;
+        }
+
+        #country-or-region {
+            width: 21.2rem;
+        }
+
+        #country-or-region {
+            cursor: pointer;
+            background-color: transparent;
+            border: 1px solid lightgrey;
+            border-radius: 3px;
+            margin-top: 5px;
+            padding: 4px;
+            color: grey;
+        }
+
+        #payment-button {
+            cursor: pointer;
+            background-color: black;
+            border: black;
+            border-radius: 5px;
+            color: #fff;
+            width: 21.2rem;
+            padding: 0.5rem;
+        }
+
+    </style>
+
+</head>
+<body>
+    
+    <form>
+        <div class="payment-details">
+            <label for="email"> <b>Email</b> </label>
+            <br>
+            <input type="email" name="email" id="checkbox-email" placeholder="Email Address">
+            <br>
+            <br>
+            <label for="card-information"> <b> Card information </b> </label>
+            <br>
+            <div class="card-information-box">
+                <div class="card-info-front">
+                    <div class="input-with-icon">
+                        <input class="input-card-info-front" type="text" placeholder="  0000 0000 0000 0000">
+                        <img src="https://static-00.iconduck.com/assets.00/mastercard-icon-2048x1587-tygju446.png" width="8px" class="card-icon" alt="Mastercard Icon">
+                    </div>
+                </div>
+                <div class="card-info-back">
+                    <input class="card-info-mmyy" type="text" placeholder="  MM/YY">
+                    <input class="card-info-cvc" type="text" placeholder="  CVC">
+                </div>
+            </div>
+            <br>
+            <label for="number-on-card"> <b> Number on card</b> </label>
+            <br>
+            <input type="text" name="number-on-card" id="number-on-card" placeholder="  Name">
+            <br>
+            <br>
+            <label for="country-or-region"> <b>Country or region</b> </label>
+            <br>
+            <select id="country-or-region" name="country-or-region">
+                <option value="" selected disabled>&nbsp;&nbsp;Country</option>
+                <option value="TH">Thailand</option>
+                <option value="US">United state</option>
+                <option value="CN">China</option>
+            </select>
+            <br>
+            <br>
+            <button id="payment-button"> Pay €55.00</button>
+        </div>
+    </form>
+    
+</body>
+</html>
